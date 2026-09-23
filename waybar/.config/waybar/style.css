@@ -1,0 +1,35 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: Iosevka Nerd Font, monospace;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+window#waybar {
+    color: #dbdbdb;
+    background-color: #111111;
+}
+
+#workspaces button {
+    color: #dbdbdb;
+    padding: 0 4px;
+    border-radius: 0px;
+}
+
+#workspaces button.focused {
+    color: #111111;
+    background-color: #6888BE;
+}
+
+#mpd,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#battery#bat2,
+#clock {
+    padding: 0px 8px;
+}
