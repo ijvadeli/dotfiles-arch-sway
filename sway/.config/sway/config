@@ -1,15 +1,21 @@
-# Default config for sway
-#
+# My config for sway
 # Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
 
+# Set border pixel width and color
 default_border pixel 2
+default_floating_border pixel 2
+
+client.focused #7f9d77 #afb7c0 #7f9d77 #7f9d77 #7f9d77
+client.focused_inactive #444444 #afb7c0 #444444 #444444 #444444
+client.unfocused #444444 #afb7c0 #444444 #444444 #444444
+
+# Set gaps between borders and screen
 gaps inner 4
 gaps outer 4
 
 ### Variables
-#
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -17,16 +23,16 @@ set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
+# Terminal emulator
 set $term kitty
-# Your preferred application launcher
+# App launcher
 set $menu wmenu-run
 font pango:Iosevka Nerd Font 12
 
 ### Output configuration
-#
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/idh/Pictures/wallpaper_girls_circuitry.jpg fill
+
+# Default wallpaper (CHANGE PATH FOR CUSTOM WALLPAPERS)
+output * bg /home/idh/dotfiles/wallpapers/Pictures/wallpapers/simon_hintermann_wizard_rain.jpg fill
 #
 # Example configuration:
 #
@@ -226,7 +232,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    bindsym Print exec grim - | wl-copy
 
 bar {
     swaybar_command waybar

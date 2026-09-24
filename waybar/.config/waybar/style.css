@@ -6,19 +6,19 @@
 }
 
 window#waybar {
-    color: #dbdbdb;
-    background-color: #111111;
+    color: #afb7c0;
+    background-color: #2c2d30;
 }
 
 #workspaces button {
-    color: #dbdbdb;
+    color: #afb7c0;
     padding: 0 4px;
     border-radius: 0px;
 }
 
 #workspaces button.focused {
-    color: #111111;
-    background-color: #6888BE;
+    color: #2c2d30;
+    background-color: #7f9d77;
 }
 
 #mpd,
